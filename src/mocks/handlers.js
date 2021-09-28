@@ -17,6 +17,7 @@ export default [
           lastName: "Russo",
           phone: "+392224444444",
           email: "mrusso@coloombus.com",
+          profilePic: "https://www.placecage.com/800/600",
         },
         {
           id: 3,

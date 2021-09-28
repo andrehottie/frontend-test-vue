@@ -1,14 +1,17 @@
 <template>
-  <div>Your solution here</div>
+  <div class="users">
+    <UserList />
+  </div>
 </template>
 
-<script>
-// Your solution here, you can use Javascript or TypeScript
-</script>
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+import UserList from "@/components/layout/UserList/index.vue"; // @ is an alias to /src
 
-<style>
-/* Your style here */
-.example {
-  padding: 0;
-}
-</style>
+@Component({
+  components: {
+    UserList,
+  },
+})
+export default class Users extends Vue {}
+</script>
