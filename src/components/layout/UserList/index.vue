@@ -34,7 +34,6 @@ export default class UserList extends Vue {
     fetch("users")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         this.users = data;
       });
   }
